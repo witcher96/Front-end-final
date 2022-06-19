@@ -1,0 +1,123 @@
+@import "./mixins";
+
+.work-with-us {
+  width: 100%;
+  height: 870px;
+  background-color: #f6f8fe;
+  @include responsivesmall {
+    padding: 20px 0 0px;
+  }
+  
+  h1 {
+    padding-top: 30px;
+    font-weight: bold;
+    color: #2d3192;
+    text-transform: capitalize;
+    @include responsivesmall {
+      padding: 0 0 5px;
+      font-size: 24px;
+    }
+  }
+
+  .work-with-us__container {
+    width: 75%;
+    height: 400px;
+    
+
+    &__icon {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      @include responsivesmall {
+        padding: 0 0 0px;
+        display: flex;
+      }
+      .col-for-5-items {
+        @include responsivesmall {
+          width: calc(33.333% - 10px);
+          padding: 0 0 10px;
+          text-align: center;
+
+          img {
+            @include responsivesmall {
+              width: 47%;
+            }
+          }
+        }
+      }
+
+      p {
+        font-weight: bold;
+        @include responsivesmall {
+          font-size: 14px;
+          padding: 0 0 5px;
+        }
+      }
+    }
+    &__image {
+      width: 600px;
+      height: 400px;
+      @include responsivesmall {
+        max-width: 100%;
+        height: 250px;
+      }
+      .img {
+        border-radius: 4px 4px 0 0;
+      }
+    }
+    &__vacancies-part {
+      background-color: #2d3192;
+      color: white;
+      padding: 30px 60px;
+      @include responsivesmall {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        border-radius: 0 0 4px 4px;
+       
+        
+      }
+      h3 {
+        font-size: 35px;
+        padding-bottom: 40px;
+        @include responsivesmall {
+          padding: 0 0 10px;
+          font-size: 21px;
+        }
+      }
+      p {
+        padding-bottom: 20px;
+        @include responsivesmall {
+          padding: 0 0 10px;
+          font-size: 14px;
+        }
+      }
+      .button-for-vacancies {
+        border-radius: 11px !important;
+        border: 3px solid #cccccc;
+        outline: none;
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+        padding: 12px;
+        @include responsivesmall {
+          padding: 0 10 20px;
+        }
+        text-decoration: none;
+        &:hover {
+          border-color: #ff931e;
+        }
+        &:hover img {
+          transform: translateX(5px);
+          transition: 0.2s;
+        }
+      }
+    }
+  }
+  .vac {
+    display: flex;
+    flex-direction: column;
+   
+    
+  }
+}

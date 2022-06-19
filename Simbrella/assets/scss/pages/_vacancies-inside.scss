@@ -1,0 +1,126 @@
+@import "./mixins";
+
+.header{
+
+.header-part{
+
+    width: 100%;
+height: 300px;
+background-color: #0c0D26;
+background-image:url("https://www.simbrella.com/site/templates/img/vacancies_header_bg.svg");
+background-position: top;
+position: relative;
+
+&__nav{
+
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    &__img{
+        padding-left: 200px;
+    }
+}
+&__new{
+    width: 500px;
+    height: 200px;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+}
+
+}
+.header-write{
+border-bottom: 1px solid #E7E7E7;
+    &__title{
+
+       text-align: center;
+    }
+   &__ul{
+       text-align: center;
+   }
+}
+
+.apply-section{
+    background-color: rgb(29, 29, 105);
+    width: 100%;
+    height: 600px;
+
+    .container{
+
+        
+
+          h2{
+        color: white;
+        padding-top: 40px;
+        padding-left: 200px;
+        font-size: 35px;
+    }
+    .application{
+
+        display: flex;
+        border-bottom: 1px solid red;
+        justify-content: space-between;
+        padding-top: 80px;
+        padding-bottom: 100px;
+        width: 100%;
+
+
+       
+         input{
+            display: block;
+            height: 64px;
+            padding: 0 20px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            background: none;
+            font-size: 16px;
+            font-weight: 300;
+            font-family: 'fooont';
+            color: #fff;
+            border-radius: 12px;
+        }
+         label{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: stretch;
+            align-items: center;
+            width: 100%;
+            height: 64px;
+            text-align: center;
+            border: 1px dashed rgba(255, 255, 255, 0.5);
+            border-radius: 12px;
+            cursor: pointer;
+        }
+         #upload-cv{
+            display: inline-block;
+            padding: 0 10px 0 27px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 2;
+            color: #fff;
+            white-space: nowrap;
+            max-width: 70%;
+            text-overflow: ellipsis;
+           
+            background: url('https://www.simbrella.com/site/templates/img/file_white_icon.svg') no-repeat 0 50%;
+        }
+        .button-for-vacancies{
+        border-radius: 11px !important;
+        border: 3px solid #cccccc;
+        outline: none;
+        color: black;
+        font-size: 15px;
+        font-weight: 600;
+        padding: 12px;
+        height: 64px;
+        }
+}
+    }
+  }

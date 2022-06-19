@@ -1,0 +1,26 @@
+@import "./pages/reset";
+@import "./component/header.scss";
+@import "./component/common";
+@import "./pages/mixins";
+@import "./pages/banner";
+
+//Pages//
+@import "./pages/what-we-do";
+@import "./pages/products";
+@import "./pages/tech-powered";
+@import "./pages/enhance";
+@import "./pages/our-clients";
+@import "./pages/map";
+@import "./pages/team";
+@import "./pages/work-with-us";
+@import "./pages/latest-news";
+//non shown pages//
+@import "./pages/latest-news-inside";
+@import "./pages/latest-news-inside-in";
+@import "./component/footer";
+@import "./pages/all-vacancies-inside-in";
+@import "./pages/our-branches";
+@import "./pages/all-vacancies";
+@import "./pages/what-we-do";
+@import "./pages/what-we-do-inside";
+@import "./pages/investors"

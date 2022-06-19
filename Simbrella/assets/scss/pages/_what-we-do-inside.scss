@@ -1,0 +1,310 @@
+@import "./mixins";
+
+ header#header__what_we_do {
+        width: 100%;
+        height: 110px;        
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 2; 
+        &> div {     
+            display: flex;   
+            justify-content: space-between;       
+            align-content: stretch;       
+            align-items: center;
+            width: 100%;
+            max-width: 1140px;
+            height: 110px;
+            margin: 0 auto;
+            padding: 0 20px;
+            transition: all 0.3s;            
+        }      
+        & .logo__we_do a {
+            display: inline-block;            
+            background-image: url(https://www.simbrella.com/site/templates/img/logo.svg);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: contain;       
+            animation-duration: 0.15s;       
+            transition: all 0.15s linear;
+            width: 154px;
+            height: 53px;
+        } 
+    }
+  
+    
+    
+    
+  
+    .vacancies_header {       
+        display: flex;       
+        flex-direction: column;        
+        justify-content: flex-end;      
+        height: 300px;
+        padding: 0 0 70px;
+        background-color: #0C0D26;
+        background-repeat: no-repeat;
+        background-position: 0 50%;
+        background-image: url(https://www.simbrella.com/site/templates/img/we_do_bg.jpg?v=2);
+        background-size: cover;
+        @include responsivesmall{
+            height: auto !important;
+        padding: 120px 0 30px !important;
+        }
+        &.we_do {
+            height: 480px;
+           
+            position: relative;
+        }
+        &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        & h1 {
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 1.29;
+            letter-spacing: 0.01em;
+            color: white;
+            @include responsivesmall{
+                padding: 0 0 20px;
+                font-size: 24px;
+            }
+        }
+        &> div {       
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;     
+        align-items: center;
+        position: relative;
+        width: 100%;
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 20px;
+        @include responsivesmall{
+                display: block;
+        }
+    }
+     
+    }
+ 
+    
+    
+    header#header__what_we_do.fix_me {
+        height: 80px;
+        background: #fff;
+        & .logo__we_do a {
+            background-image: url(https://www.simbrella.com/site/templates/img/logo_colored.svg);
+            background-size: contain;
+        }   
+        &> div {
+            height: 80px;
+        }      
+    }.what_block{
+        & article {        
+            padding: 100px 0;
+            background: #F6F8FF;
+            @include responsivesmall{
+                padding: 40px 0;
+            }
+            & > div {      
+                display: flex;             
+                justify-content: space-between;               
+                align-items: center;
+                max-width: 1140px;
+                margin: 0 auto;
+                padding: 0 20px;
+                @include responsivesmall{
+                        display: block
+                }
+            }
+        }
+        & .image_side {
+            width: 430px;
+            padding: 40px 24px 60px;
+            border: 1px solid #fff;
+            background: rgb(255, 255, 255);
+            border-radius: 4px; 
+            @include responsivesmall{
+                    width: 100%;
+            }          
+        }
+        & .image {
+            width: 100%;
+            position: relative;
+            height: 230px;
+            text-align: center;
+        }
+        & h3 {
+            padding: 0 0 16px;
+            font-size: 24px;
+            line-height: 1.25;
+            text-align: center;
+            letter-spacing: 0.01em;
+            color: #222;
+        }
+        & p {
+            font-size: 16px;
+            line-height: 1.62;
+            text-align: center;
+            color: #5F6773;
+        }
+        & .r_side {
+            width: calc(100% - 600px);  
+            @include responsivesmall{
+                width: 100%;
+             padding: 30px 0 0;
+            }         
+        }
+        & .text {
+            font-size: 20px;
+            line-height: 1.4;
+            color: #222;
+            @include responsivesmall{
+                font-size: 16px;
+            }
+            & li {
+                padding: 0 0 0 21px;
+                margin: 0 0 32px;
+                position: relative;
+                @include responsivesmall{
+                    margin: 0 0 18px;
+                }
+            }
+           & li::before {
+                content: "";
+                display: block;
+                width: 8px;
+                height: 8px;
+                background: #FF931E;
+                position: absolute;
+                left: 0;
+                top: calc(50% - 4px);
+                border-radius: 50%;
+            }
+        }
+        & ul {
+            list-style: none;
+        }
+        & .single_image {
+            max-height: 480px;
+            min-height: 270px;
+            height: 30vw;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+            &::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+            }
+        }
+    }
+    // footer
+footer#footer__what_we_do { 
+    display: flex;  
+    flex-direction: column;  
+    flex-wrap: nowrap;    
+    align-content: stretch; 
+    align-items: stretch;
+    padding: 35px 0 25px;
+    min-height: calc(100vh - 80px);
+    background-color: #000;
+    background-image: url(https://www.simbrella.com/site/assets/files/1177/we_icon_3.svg);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    &.compact__what_we_do{
+      min-height: 1px;
+      padding: 34px 0 34px;
+      background-image: none;
+      & .footer_last__what_we_do {
+        padding: 0 20px;
+      }
+    }
+  }
+  
+  .footer_last__what_we_do {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 40px 20px 0; 
+    display: flex;  
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    justify-content: space-between; 
+    align-content: stretch; 
+    align-items: stretch;
+    @include responsivesmall{
+        display: block;
+    padding: 40px 20px 0;
+    text-align: center;
+    }
+  }
+  .jis__what_we_do { 
+    display: flex;  
+    flex-direction: row; 
+    flex-wrap: nowrap;  
+    justify-content: flex-start;  
+    align-content: stretch;  
+    align-items: center;
+    @include responsivesmall{
+    justify-content: center;
+    }
+    & p {
+      padding: 0 10px 0 0;
+      font-size: 12px;
+      line-height: 2.67;
+      color: #fff;
+    }
+    & a {
+      display: inline-block;
+      padding: 0 0 0 30px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 2.67;
+      color: #fff;
+      text-decoration: none;
+          position: relative;
+    }
+    & a::before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: url(https://www.simbrella.com/site/templates/img/jis_logo.svg) no-repeat 0 0;
+      position: absolute;
+      left: 0;
+      top: calc(50% - 10px);}
+  }
+  
+  
+  .copyright__what_we_do {
+    width: calc(100% - 360px);
+    font-size: 16px;
+    line-height: 1.5;
+    color: #999;
+    @include responsivesmall{
+            width: 100%;
+    padding: 10px 0 0;
+    font-size: 14px;
+    }
+  }
+    
+   
+
+    
+  
+   

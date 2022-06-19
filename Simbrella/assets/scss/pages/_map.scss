@@ -1,0 +1,120 @@
+@import "./mixins";
+
+.countries-circle:hover,.countries-circle-orange:hover{
+    cursor:pointer;
+}
+.country-map-prm:hover{
+    fill: darkblue !important;
+    cursor:pointer;
+}
+.country-map-scn:hover{
+    fill: darkblue !important;
+    cursor:pointer;
+}
+
+
+.world-map{
+    .container{
+        .row{
+            .header-of-map{
+                
+                h2{
+                    color: darkblue;
+                    font-size: 36px !important;
+                    font-weight: bold;
+
+                }
+            }
+            .explanation-of-circles{
+                z-index: 1;
+                border-radius: 4px;
+                border-color: #e1e1e1 !important;
+                .orange{
+                    margin: 0 0 16px;
+                    padding-left: 22px;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    text-transform: capitalize;
+                    color: #222;
+                    position: relative;
+                    &::before{
+                        content: "";
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: 0;
+                        top: calc(50% - 10px);
+                        background:darkblue;
+                        opacity: 0.3;
+                    }
+                    &::after{
+                        content: "";
+                        display: block;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: 7px;
+                        top: calc(50% - 3px);
+                        background:rgb(188, 132, 12);
+                    }
+                }
+                .blue{
+                    margin: 0 0 16px;
+                    padding-left: 22px;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    text-transform: capitalize;
+                    color: #222;
+                    position: relative;
+                    &::before{
+                        content: "";
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: 0;
+                        top: calc(50% - 10px);
+                        opacity: 0.3;
+                        background-color: darkblue;
+                    }
+                    &::after{
+                        content: "";
+                        display: block;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: 7px;
+                        top: calc(50% - 3px);
+                        background-color: darkblue;
+                    }
+                }
+                .mix-of-colors{
+                    padding: 0 0 0 30px;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    text-transform: capitalize;
+                    color: #222;
+                    position: relative;
+                    &::before{
+                        content: "";
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: 0;
+                        top: calc(50% - 10px);
+                        opacity: 1;
+                        background: url('https://www.simbrella.com/site/templates/img/both_icon.svg') no-repeat 50%;
+                        background-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

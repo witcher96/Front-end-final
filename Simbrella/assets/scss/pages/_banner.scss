@@ -1,0 +1,126 @@
+@import "../pages/mixins";
+.banner {
+  // background-image: url(https://www.simbrella.com/site/assets/files/1040/cover.jpg);
+  height: 100vh;
+
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: right center;
+  padding: 230px 120px;
+  @include responsivesmall {
+    height: auto;
+    padding: 100px 0;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+  }
+  
+  &__container {
+
+    &__bannerdesc{
+        @include mobileversion {
+      padding: 78px 0px;
+    }
+    @include responsivemin {
+      padding: 40px 30px;
+    }
+    @include responsivesmall {
+      max-width: 58%;
+
+      padding: 40vw 10px;
+    }
+  }
+  h1 {
+    color: white;
+    font-weight: bold;
+
+    @include mobileversion {
+      font-size: 20px !important;
+      letter-spacing: 2px;
+    }
+    @include responsivesmall {
+      font-size: 21px;
+    }
+  }
+  p {
+    color: white;
+    margin: 30px 0;
+    @include responsivesmall {
+      padding: 0 0 30px;
+      line-height: 1.7;
+      font-size: 14px;
+    }
+    }
+    @include responsivesmall {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-size: cover;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      
+    }
+  }
+  .overlay {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: 0.2;
+    height: 100%;
+    width: 100%;
+  }
+  .image {
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-image: url(https://www.simbrella.com/site/assets/files/1040/cover.jpg);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    @include responsivemin {
+      background-position: 60% 50%;
+    }
+  }
+
+  @include mobileversion {
+    padding: 250px 0px;
+    background-position: top center;
+  }
+  p {
+    color: white;
+    margin: 30px 0;
+    @include responsivesmall {
+      padding: 0 0 30px;
+      line-height: 1.7;
+      font-size: 14px;
+    }
+  }
+
+  .btn {
+    position: absolute;
+
+    color: #f6f3f3;
+    margin: 15px;
+    padding-top: 150px;
+    padding-right: 5px;
+    display: flex;
+    border: none;
+    text-align: center;
+    span {
+      padding-left: 10px;
+      padding-top: 10px;
+    }
+    @include mobileversion {
+      display: none;
+    }
+  }
+}
